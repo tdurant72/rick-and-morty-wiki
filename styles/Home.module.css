@@ -79,8 +79,23 @@
 
   max-width: 800px;
   margin-top: 3rem;
+  list-style: none;
+  margin-left: 0;
+  padding-left:0 ;
 }
-
+.search input{
+  margin-right: 0.5em;
+}
+@media(max-width:600px){
+  .search input{
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+  .search input,
+  .search button{
+    width: 100%;
+  }
+}
 .card {
   margin: 1rem;
   flex-basis: 45%;
@@ -119,5 +134,24 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+.profile {
+  display: flex;
+  margin-top: 2em;
+}
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+  }
+}
+.profile-image {
+  margin-right: 2em;
+}
+@media (max-width: 600px) {
+  .profile-image {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
